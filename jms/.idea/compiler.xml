@@ -9,5 +9,8 @@
         <module name="jms" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jms-spring" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
