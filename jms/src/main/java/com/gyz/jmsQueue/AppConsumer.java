@@ -10,7 +10,7 @@ import javax.jms.*;
  * @date 2019/4/10 0010
  */
 public class AppConsumer {
-    public static final String url = ActiveMQConnection.DEFAULT_BROKER_URL;
+    public static final String url = "failover:(tcp://10.0.24.174:61616,tcp://10.0.24.174:61617,tcp://10.0.24.174:61618)?randomize=true";
     public static final String queueName = "queue-test";
 
     public static void main(String[] args) throws JMSException {
